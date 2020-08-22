@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!-- saved from url=(0080)file:///G:/javascript/%E5%9F%B9%E8%AE%AD/react%E8%AE%A2%E5%8D%95/dist/index.html -->
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div class="OrderManager">
+    <div class="top">
+      <div class="title">订单管理</div><button class="add">增加新订单</button>
+    </div>
+    <div class="table">
+      <div class="thead">
+        <div class="tr">
+          <div class="th">日期</div>
+          <div class="th">销售</div>
+          <div class="th">金额</div>
+          <div class="th">明细</div>
+          <div class="th">操作</div>
+        </div>
+      </div>
+      <div class="tbody">
+        <div class="tr">
+          <div class="th">2020-08-01</div>
+          <div class="th">xxx</div>
+          <div class="th">2000</div>
+          <div class="th">
+            <div>袜子x5</div>
+            <div>鞋子x5</div>
+          </div>
+          <div class="th">
+            <a class="modify">修改</a>
+            <a class="delte">删除</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="Pager"><a class="last-page hide">上一页</a><span>1/10</span><a class="next-page"> 下一页</a></div>
+    <div class="EditPopup hide">
+      <div class="top">
+        <div class="title">增加/修改订单</div>
+        <div><button class="save">保存</button><button class="close">关闭</button></div>
+      </div>
+      <div class="edit-area">
+        <div class="hide">ID 0</div>
+        <div class="date">日期<input type="text" value=""></div>
+        <div class="salesName">销售<input type="text" value=""></div>
+        <div class="amount">金额<input type="text" value="0"></div>
+        <div class="table">
+          <div class="row">
+            <div class="detail">明细</div>
+            <div class="name">品名</div>
+            <div class="amount">数量</div>
+          </div>
+          <ul>
+            <li><input type="text" class="name" value=""><input type="text" class="amount" value="0"><button
+                class="delete">删除</button></li>
+          </ul><button class="add">添加</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

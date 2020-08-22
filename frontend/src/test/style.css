@@ -1,0 +1,229 @@
+body {
+  padding: none;
+  margin: none;
+  background-color: #000;
+}
+body a {
+  cursor: pointer;
+}
+body button {
+  cursor: pointer;
+}
+body > .OrderManager {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  width: 800px;
+  background-color: #fff;
+  margin: 0 auto;
+}
+body > .OrderManager > .top {
+  flex: 0 0 auto;
+  display: flex;
+  height: 60px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+body > .OrderManager > .top > .title {
+  font-size: 22px;
+  font-weight: 600;
+  color: #222;
+}
+body > .OrderManager > .top > .add {
+  box-sizing: border-box;
+  background-color: #3baff8;
+  color: #fff;
+  padding: 5px 10px;
+  border: none;
+}
+body > .OrderManager > .table {
+  flex: 1;
+  border: 2px solid #222;
+  display: flex;
+  flex-direction: column;
+}
+body > .OrderManager > .table * {
+  font-weight: 600;
+}
+body > .OrderManager > .table > .thead {
+  flex: 0 0 auto;
+}
+body > .OrderManager > .table > .thead > .tr {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+body > .OrderManager > .table > .thead > .tr > .th {
+  flex: 1;
+  border-bottom: 1px solid black;
+  line-height: 20px;
+  padding: 10px 0;
+}
+body > .OrderManager > .table > .tbody {
+  display: flex;
+  flex: 1;
+}
+body > .OrderManager > .table > .tbody > .tr {
+  flex: 1;
+  display: flex;
+  text-align: center;
+}
+body > .OrderManager > .table > .tbody > .tr > .th {
+  flex: 1;
+  line-height: 1.375em;
+  word-break: break-all;
+}
+body > .OrderManager > .table > .tbody > .tr:nth-child(2n) {
+  background-color: #58676b;
+}
+body > .OrderManager > .table a {
+  color: lightskyblue;
+  margin-left: 5px;
+}
+body > .OrderManager > .Pager {
+  flex: 0 0 auto;
+  text-align: center;
+  user-select: none;
+}
+body > .OrderManager > .Pager a {
+  color: lightskyblue;
+}
+body > .OrderManager > .EditPopup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  background-color: #fff;
+  transform: translate(-50%, -50%);
+}
+body > .OrderManager > .EditPopup > .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+body > .OrderManager > .EditPopup > .top > .title {
+  font-size: 22px;
+  font-weight: 600;
+  flex: 0 0 auto;
+}
+body > .OrderManager > .EditPopup > .top > div {
+  flex: 0 0 auto;
+}
+body > .OrderManager > .EditPopup > .top > div > * {
+  background-color: #3baff8;
+  padding: 5px 10px;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+}
+body > .OrderManager > .EditPopup > .edit-area {
+  padding: 10px;
+  min-height: 220px;
+}
+body > .OrderManager > .EditPopup > .edit-area > * {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+body > .OrderManager > .EditPopup > .edit-area > * > input {
+  font-size: 18px;
+  width: 220px;
+}
+body > .OrderManager > .EditPopup > .edit-area > .date {
+  padding: 0 20px;
+}
+body > .OrderManager > .EditPopup > .edit-area > .salesName {
+  padding: 0 20px;
+}
+body > .OrderManager > .EditPopup > .edit-area > .amount {
+  padding: 0 20px;
+}
+body > .OrderManager > .EditPopup > .edit-area > .table {
+  margin-top: 20px;
+  padding: 0 20px;
+  position: relative;
+}
+body > .OrderManager > .EditPopup > .edit-area > .table > .row {
+  display: flex;
+  align-items: center;
+  width: 264px;
+}
+body > .OrderManager > .EditPopup > .edit-area > .table > .row > * {
+  flex: 0 0 auto;
+}
+body > .OrderManager > .EditPopup > .edit-area > .table > .row > .name {
+  flex: 1;
+  text-align: center;
+}
+body > .OrderManager > .EditPopup > .edit-area > .table > .row > .detail {
+  flex: 0 0 auto;
+}
+body > .OrderManager > .EditPopup > .edit-area > .table > .row > .amount {
+  width: 40px;
+  margin-right: 5px;
+}
+body > .OrderManager > .EditPopup > .edit-area > .table > ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+body > .OrderManager > .EditPopup > .edit-area > .table > ul > li {
+  display: inline-block;
+  right: 20px;
+  padding-right: 15px;
+  margin-bottom: 5px;
+}
+body > .OrderManager > .EditPopup > .edit-area > .table > ul > li > .name {
+  width: 120px;
+  font-size: 18px;
+}
+body > .OrderManager > .EditPopup > .edit-area > .table > ul > li > .amount {
+  width: 60px;
+  font-size: 18px;
+}
+body > .OrderManager > .EditPopup > .edit-area > .table > ul > li > .delete {
+  background-color: #3baff8;
+  padding: 2px 10px;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+}
+body > .OrderManager > .EditPopup > .edit-area > .table > .add {
+  font-size: 18px;
+  background-color: #3baff8;
+  padding: 2px 10px;
+  border: none;
+  color: #fff;
+  margin-left: 30px;
+}
+body .hide {
+  display: none !important;
+}
+body .open {
+  display: block !important;
+}
+body #Loading {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  text-align: center;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  min-height: 300px;
+}
+body #Loading > .box {
+  margin: 0 auto;
+  flex: 0 0 auto;
+  height: 30px;
+  width: 80%;
+  border: 1px solid #70d0e0;
+  background-color: aqua;
+  border-radius: 10px;
+}
